@@ -14,7 +14,7 @@ def lcs(s1, s2):
 
 def main():
   s1, s2 = map(str, input().split())
-  print(ssc(s1, s2))
+  print(lcs(s1, s2))
 
   return 0
 
