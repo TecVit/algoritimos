@@ -8,18 +8,15 @@ def main():
     row = [int(x) for x in input().split()]
     m[i] = row
 
-  # Verificando Linhas e Colunas
   sum_row = 0
   sum_column = 0
-  for i in range(n): # Complexidade = O(n²)
+  for i in range(n):
     sum_c = 0
     for j in range(n):
       sum_c += m[j][i]
     
     if i == 0:
-      # Verificando Linhas
       sum_row = sum(m[i])
-      # Verificando Linhas
       sum_column = sum_c
     else:
       if sum_row != sum(m[i]):
@@ -29,10 +26,9 @@ def main():
         print("0")
         return
       
-  # Verificando Diagonais
   sum_d1 = 0
   sum_d2 = 0
-  for i in range(n): # Complexidade = O(n²)
+  for i in range(n):
     d1 = m[i][i]
     d2 = m[n - i -1][i]
     sum_d1 += d1

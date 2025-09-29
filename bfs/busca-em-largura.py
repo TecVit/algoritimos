@@ -1,5 +1,4 @@
 # Gincana (OBI 2011)
-
 from collections import deque
 
 def main():
